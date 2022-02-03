@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root{
+  scroll-behavior: smooth;
+  }
+  body{
+    font-family: 'Bebas Neue', cursive;
+  }
+  
+  .contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+  }
+  
+  header{
+    height: 100vh;
+    background-image: linear-gradient(120deg, rgba(132, 250, 175, 0.226) 0%, rgba(143, 210, 244, 0.212) 100%), url(../img/11.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  .head{
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+  }
+  
+  .haburger{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow:  0 0 6px rgba(0, 0, 0, .7);
+  }
+  
+  nav{
+    width: 1000px;
+    margin: 30px auto;
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+  }
+  
+  .navegacion ul{
+    list-style: none;
+    text-align: center;
+  }
+  
+  .menu > li{
+    position: relative;
+    display: inline-block;
+  }
+  
+  .menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: #ffff;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    font-size: 30px;
+  }
+  
+  .menu li a:hover{
+    color: #a2b4e0;
+    transition: all .3s;
+  }
+  
+  
+  .submenu{
+    position: absolute;
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+    width: 120%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+  }
+  .submenu li a{
+    display: block;
+    padding: 15px;
+    color: rgb(241, 236, 236);
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+  .menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  
+  .logo{
+    width: 30px;
+    height: 70px;
+    float: left;
+  }
+  .spread{
+    transform: translate(0);
+    
+  }
+  .menu-navegacion a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+   
+  }
+  
+  .titulo{
+    font-size: 60px;
+    margin-bottom: 15px;
+  }
+  
+  .copy{
+    font-weight: 300;
+    font-size: 25px;
+  }
+  
+  /*Nuestra musica*/
+  
+  .subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: #66a6ff;
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+  
+  .contenedor-inicio{
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+  }
+  
+  .contenedor-inicio img{
+    width: 40%;
+  }
+  .checklist-inicio{
+    width: 45%;
+  }
+  
+  .service{
+    margin-bottom: 20px;
+  
+  }
+  
+  .n-service{
+    margin-bottom: 7px;
+    color: aqua;
+  }
+  
+  .number{
+    display: inline-block;
+    background-image: linear-gradient(120deg, rgba(132, 250, 175, 0.733) 0%, rgba(143, 210, 244, 0.767) 100%);
+    width: 30px;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    line-height: 30px;
+    margin-right: 5px;
+  }
+
+  .wrapper{
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+    }
+    
+    
+    
+    section{
+        background-attachment: fixed;
+        background-repeat: no-repeat ;
+        background-size: cover;
+        height: 1100px;
+        margin: 0 auto;
+        max-width: 1440px;
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+        width: 100%;
+    }
+    
+    .contenedor-Artistas{
+        width: 96;
+      
+       margin: auto;
+
+      }
+      
+      .contenedor-Artistas ul{
+        padding: 0;
+        display: flex;
+        width: 400%;
+        animation: cambio 20s infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in;
+        text-align: center;
+        
+      }
+      
+      .contenedor-Artistas li{
+        width: 100%;
+        list-style: none;
+      
+        display: block;
+      }
+      
+      .contenedor-Artistas img{
+        width: 50%;
+        
+      }
+        
+      @keyframes cambio{
+        0%{margin-left: 0;}
+        20%{margin-left: 0;}
+        25%{margin-left: -100%}
+        45%{margin-left: -100%}
+        50%{margin-left: -200%}
+        70%{margin-left: -200%}
+        75%{margin-left: -300%}
+        
+      }
+    #Artistas {
+        background-image: url(../img/wol.jpg);
+    }
+    
+    
+    
+
+    .imagen-light{
+        position: fixed;
+        background: rgba(0, 0, 0, .5);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      transform: translate(100%);
+      transition: trnsform .2s ease-in-out;
+      
+      }
+      
+      .show{
+        transform: translate(0);
+      }
+      
+      .agregar-imagen{
+        object-fit: cover;
+      transform: scale(0);
+      transition: tranform .3s .2s;
+        width: 60%;
+        border-radius: 10px;
+      }
+      
+      .showImage{
+        transform: scale(1);
+      }
+      
+      .close{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 40px;
+        cursor: pointer;
+      }
+      
+      .experts{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      
+      .cont-expert{
+        width: 30%;
+        text-align: center;
+        margin-bottom: 20px;
+        cursor: pointer;
+      }
+      
+      .cont-expert img{
+        width: 80%;
+        display: block;
+        margin:0 auto;
+      }
+      
+      .n-expert{
+        display: inline-block;
+        margin-top: 20px;
+        width: 100%;
+        font-weight: 400;
+      }
+
+      footer{
+        background: #5eb9f7;
+        padding-bottom: 0.1px;
+      }
+      
+      .footer-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      
+      .contact-us{
+        width: 40%;
+        color: rgb(255, 255, 255);
+      }
+      
+      .brand{
+        font-weight: 500;
+        font-size: 40px;
+      }
+      
+      .brand+p{
+        font-weight: 500;
+      }
+      
+      .social-media{
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+      }
+      
+      .social-media-icon{
+        display: inline-block;
+        margin-left: 20px;
+        width: 60px;
+        height: 60px;
+        border: 1px solid #fff;
+        border-radius: 50px;
+        text-align: center;
+        color: #fff;
+      }
+      .social-media-icon:hover{
+        background: #fff;
+        color: #0f0bdf;
+      
+      }
+      
+      .social-media-icon i{
+        font-size: 30px;
+        line-height: 60px;
+      }
+      
+      .line{
+        width: 90;
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 2px;
+        background: #fff;
+        margin-bottom: 60px;
+      }
